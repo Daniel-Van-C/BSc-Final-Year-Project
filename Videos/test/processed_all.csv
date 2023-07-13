@@ -1,5 +1,0 @@
-Comment,Time,Polarity,Sentiment,Subjectivity,Offensive?,Emotion
-test comment yes,"2022-04-13
-00:34:38",0.4019,positive,0.0,No,approval
-true,"2022-04-13
-00:34:24",0.4215,positive,0.65,No,neutral
