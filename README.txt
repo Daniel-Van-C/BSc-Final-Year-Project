@@ -2,6 +2,8 @@ BSc Final Year Project - Daniel Van Cuylenburg.
 
 YouTube video comments analyser. Enter a link, wait for comments to be downloaded, and analyse them using this tool.
 
+Read the full report: report.pdf
+
 
 FOLDERS
 Corpora: Corpora used to train the machine learning models.
