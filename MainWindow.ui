@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>977</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main Window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="vectorizer_table">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>271</width>
+      <height>881</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="report_table">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>1241</width>
+      <height>881</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpenComments">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>10</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Open Comments
+as CSV File</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="chart_table">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>72</y>
+      <width>961</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="sort_by_box">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>0</y>
+      <width>391</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>381</width>
+       <height>52</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="sort_by_layout">
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="sort_by_most_subjective_button">
+        <property name="text">
+         <string>Most Subjective</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="sort_by_positive_button">
+        <property name="text">
+         <string>Most Positive</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="sort_by_negative_button">
+        <property name="text">
+         <string>Most Negative</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QRadioButton" name="sort_by_least_subjective_button">
+        <property name="text">
+         <string>Least Subjective</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QRadioButton" name="sort_by_oldest_button">
+        <property name="text">
+         <string>Oldest</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QRadioButton" name="sort_by_latest_button">
+        <property name="text">
+         <string>Latest</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="sort_by_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>61</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="text">
+      <string>Sort
+By</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="chart_box">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>30</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>0</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="chart_layout">
+      <item>
+       <widget class="QRadioButton" name="bar_chart_button">
+        <property name="text">
+         <string>Bar Chart</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="word_cloud_button">
+        <property name="text">
+         <string>Word Cloud</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="chart_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="text">
+      <string>Chart</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="time_box">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>0</y>
+       <width>322</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="time_layout">
+      <item>
+       <widget class="QRadioButton" name="all_time_button">
+        <property name="text">
+         <string>All Time</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="thirty_days_button">
+        <property name="text">
+         <string>30 Days</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="seven_days_radio_button">
+        <property name="text">
+         <string>7 Days</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="twenty_four_hours_button">
+        <property name="text">
+         <string>24 Hours</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="time_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>61</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="text">
+      <string>Time
+Range</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="titleLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>661</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Temp</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuData">
+    <property name="title">
+     <string>Select Data View</string>
+    </property>
+    <addaction name="actionReport"/>
+    <addaction name="actionEmotional_Analysis"/>
+    <addaction name="actionComments"/>
+    <addaction name="separator"/>
+    <addaction name="actionUnigramFrequency"/>
+    <addaction name="actionUnigramImportance"/>
+    <addaction name="separator"/>
+    <addaction name="actionBigramFrequency"/>
+    <addaction name="actionBigramImportance"/>
+    <addaction name="separator"/>
+    <addaction name="actionTrigramFrequency"/>
+    <addaction name="actionTrigramImportance"/>
+   </widget>
+   <addaction name="menuData"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionReport">
+   <property name="text">
+    <string>Report</string>
+   </property>
+  </action>
+  <action name="actionUnigramFrequency">
+   <property name="text">
+    <string>Unigram Frequency</string>
+   </property>
+  </action>
+  <action name="actionUnigramImportance">
+   <property name="text">
+    <string>Unigram Importance</string>
+   </property>
+  </action>
+  <action name="actionComments">
+   <property name="text">
+    <string>List of Comments</string>
+   </property>
+  </action>
+  <action name="actionBigramFrequency">
+   <property name="text">
+    <string>Bigram Frequency</string>
+   </property>
+  </action>
+  <action name="actionBigramImportance">
+   <property name="text">
+    <string>Bigram Importance</string>
+   </property>
+  </action>
+  <action name="actionTrigramFrequency">
+   <property name="text">
+    <string>Trigram Frequency</string>
+   </property>
+  </action>
+  <action name="actionTrigramImportance">
+   <property name="text">
+    <string>Trigram Importance</string>
+   </property>
+  </action>
+  <action name="actionEmotional_Analysis">
+   <property name="text">
+    <string>Emotional Analysis</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

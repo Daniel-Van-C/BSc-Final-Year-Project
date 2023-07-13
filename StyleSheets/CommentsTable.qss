@@ -1,0 +1,12 @@
+QTableView
+{
+	gridline-color: #c7c7c7;
+    font: 10pt;
+
+}
+
+QHeaderView 
+{
+    font: 10pt;
+
+}

@@ -1,0 +1,10 @@
+ ,All Time,Last Month,Last Week,Last 48 Hours
+Positive,182,182,4,1
+Neutral,99,99,1,0
+Negative,338,338,4,0
+Total,619,619,9,1
+Average Valence,-0.218,-0.218,-0.075,0.63
+Average Subjectivity,0.403,0.403,0.512,0.5
+Offensive,261,261,3,1
+Inoffensive,358,358,6,0
+Processing Time,28.5 Secs, , , 

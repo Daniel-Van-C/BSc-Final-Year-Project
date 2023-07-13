@@ -1,0 +1,3 @@
+Comment,no_symbols,no_punctuation_and_symbols,no_urls,no_urls2,lower_case,expanded_contractions,expanded_contractions2,spelling,spelling2,tokens,lemmas,lemmas_no_stopwords
+test comment yes,test comment yes,test comment yes,test comment yes,test comment yes,test comment yes,test comment yes ,test comment yes ,test comment yes ,test comment yes ,"['test', 'comment', 'yes']","['test', 'comment', 'yes']","['test', 'comment', 'yes']"
+true,true,true,true,true,true,true ,true ,true ,true ,['true'],['true'],['true']
